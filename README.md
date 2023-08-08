@@ -49,7 +49,7 @@ python font2img.py --src_font=src.ttf
 ```
 **character.txt** should be a one line file.
 
-###　Package
+### Package
 After obtaining all images, run **package.py** to pickle the images and their corresponding labels into binary format:
 ```python
 python package.py --dir=image_directories
@@ -58,7 +58,7 @@ python package.py --dir=image_directories
 ```
 After running this, you will find two objects **train.obj** and **val.obj** under the **--save_dir** for training and validation, respectively.
 
-###　Experiment Layout
+### Experiment Layout
 ```python
 experiment/
 └── data
@@ -66,7 +66,7 @@ experiment/
     └── val.obj
 ```
 Create a **experiment** directory under the root of the project, and a data directory within it to place the two binaries. Assuming a directory layout enforce better data isolation, especially if you have multiple experiments running.
-###　Train
+### Train
 To start training run the following command
 ```python
 python train.py --experiment_dir=D:/dataset/zi2zi/202308test/ 
