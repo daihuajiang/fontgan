@@ -86,7 +86,7 @@ During the training, you will find two or several checkpoint files **N_net_G.pth
 
 **WARNING**, If your **--checkpoint_steps** is small, you will find tons of checkpoint files in you checkpoint path and your disk space will be filled with useless checkpoint file. You can delete useless checkpoint to save your disk space.
 
-###　Infer
+### Infer
 After training is done, run the below command to infer test data:
 ```python
 python infer.py --experiment_dir experiment
